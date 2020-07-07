@@ -22,7 +22,7 @@ Entry.block[`func_${getblockid('%1확인하기%2')}`].func = (sprite, script) =>
 
 
 //prompt 블록
-Entry.block[`func_${getblockid('%1확인하기%2')}`].paramsKeyMap = { content: 0 };
-Entry.block[`func_${getblockid('%1확인하기%2')}`].func = (sprite, script) => {
+Entry.block[`func_${getblockid('%1물어보기%2')}`].paramsKeyMap = { content: 0 };
+Entry.block[`func_${getblockid('%1%2')}`].func = (sprite, script) => {
     Entry.variableContainer.getVariableByName('avo').value_ = prompt(script.getValue('content',script))
 }
