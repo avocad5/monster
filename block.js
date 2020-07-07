@@ -18,6 +18,7 @@ Entry.block[`func_${getblockid('%1확인하기%2')}`].func = (sprite, script) =>
    Entry.variableContainer.getVariableByName('avo').value_ = '확인'
   } else{
    Entry.variableContainer.getVariableByName('avo').value_ = '취소'
+  }
 }
 
 
