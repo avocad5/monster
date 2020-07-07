@@ -1,3 +1,5 @@
+//muno9748님의 EntAI 1.0코드를 참고해서 avocad5가 만들었습니다
+
 function getblockid(name){
  return _.find(Entry.variableContainer.functions_,
         d => d.block.template.replace(/ /gi,'') == name).id
