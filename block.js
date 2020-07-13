@@ -32,15 +32,15 @@ Entry.block[`func_${getblockid('%1물어보기%2')}`].func = (sprite, script) =>
 
 
 //toast 블록 (알림)
-Entry.block[`func_${getblockid('%1제목과%2내용의 알림창띄우기%3')}`].paramsKeyMap = { title : 0, content: 1 };
-Entry.block[`func_${getblockid('%1제목과%2내용의 알림창띄우기%3')}`].func = (sprite, script) => {
+Entry.block[`func_${getblockid('%1제목과%2내용의알림창띄우기%3')}`].paramsKeyMap = { title : 0, content: 1 };
+Entry.block[`func_${getblockid('%1제목과%2내용의알림창띄우기%3')}`].func = (sprite, script) => {
     Entry.toast['success'](script.getValue('title',script),script.getValue('content',script),false)
 }
 
 
 //toast 블록 (경고)
-Entry.block[`func_${getblockid('%1제목과%2내용의 경고창띄우기%3')}`].paramsKeyMap = { title : 0, content: 1 };
-Entry.block[`func_${getblockid('%1제목과%2내용의 경고창띄우기%3')}`].func = (sprite, script) => {
+Entry.block[`func_${getblockid('%1제목과%2내용의경고창띄우기%3')}`].paramsKeyMap = { title : 0, content: 1 };
+Entry.block[`func_${getblockid('%1제목과%2내용의경고창띄우기%3')}`].func = (sprite, script) => {
     Entry.toast['alert'](script.getValue('title',script),script.getValue('content',script),false)
 }
 
@@ -53,7 +53,7 @@ Entry.block[`func_${getblockid('콘솔창에%1라고쓰기%2')}`].func = (sprite
 
 
 //콘솔 clear
-Entry.block[`func_${getblockid('콘솔창 초기화하기%1')}`].paramsKeyMap = {};
-Entry.block[`func_${getblockid('콘솔창 초기화하기%1')}`].func = (sprite, script) => {
+Entry.block[`func_${getblockid('콘솔창초기화하기%1')}`].paramsKeyMap = {};
+Entry.block[`func_${getblockid('콘솔창초기화하기%1')}`].func = (sprite, script) => {
   console.clear()
 }
