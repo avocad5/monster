@@ -29,3 +29,10 @@ Entry.block[`func_${getblockid('%1물어보기%2')}`].paramsKeyMap = { content: 
 Entry.block[`func_${getblockid('%1물어보기%2')}`].func = (sprite, script) => {
     Entry.variableContainer.getVariableByName('avo').value_ = prompt(script.getValue('content',script))
 }
+
+
+//toast 블록
+Entry.block[`func_${getblockid('%1제목과%2내용의 알림창띄우기%3')}`].paramsKeyMap = { title : 0, content: 1 };
+Entry.block[`func_${getblockid('%1물어보기%2')}`].func = (sprite, script) => {
+    Entry.toast['success'](script.getValue('title',script),script.getValue('content',script),false)
+}
