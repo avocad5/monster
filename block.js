@@ -57,3 +57,5 @@ Entry.block[`func_${getblockid('콘솔창초기화하기%1')}`].paramsKeyMap = {
 Entry.block[`func_${getblockid('콘솔창초기화하기%1')}`].func = (sprite, script) => {
   console.clear()
 }
+
+alert('몬스터블록이 모두 설치되었습니다!')
