@@ -34,14 +34,14 @@ Entry.block[`func_${getblockid('%1물어보기%2')}`].func = (sprite, script) =>
 //toast 블록 (알림)
 Entry.block[`func_${getblockid('%1제목과%2내용의알림창띄우기%3')}`].paramsKeyMap = { title : 0, content: 1 };
 Entry.block[`func_${getblockid('%1제목과%2내용의알림창띄우기%3')}`].func = (sprite, script) => {
-    Entry.toast['success'](script.getValue('title',script),script.getValue('content',script),false)
+    Entry.toast['success'](script.getValue('title',script),script.getValue('content',script),true)
 }
 
 
 //toast 블록 (경고)
 Entry.block[`func_${getblockid('%1제목과%2내용의경고창띄우기%3')}`].paramsKeyMap = { title : 0, content: 1 };
 Entry.block[`func_${getblockid('%1제목과%2내용의경고창띄우기%3')}`].func = (sprite, script) => {
-    Entry.toast['alert'](script.getValue('title',script),script.getValue('content',script),false)
+    Entry.toast['alert'](script.getValue('title',script),script.getValue('content',script),true)
 }
 
 
