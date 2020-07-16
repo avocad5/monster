@@ -58,4 +58,5 @@ Entry.block[`func_${getblockid('콘솔창초기화하기%1')}`].func = (sprite, 
   console.clear()
 }
 
+Entry.variableContainer.getVariableByName('avo').value_ = '설치됨'
 alert('몬스터블록이 모두 설치되었습니다!')
