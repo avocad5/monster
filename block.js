@@ -58,5 +58,22 @@ Entry.block[`func_${getblockid('콘솔창초기화하기%1')}`].func = (sprite, 
 }
 
 
+//쉽표배열의 ()번째항목
+Entry.block[`func_${getblockid('쉼표배열%1의%2번째항목%3')}`].paramsKeyMap = { mylist : 0, num:1};
+Entry.block[`func_${getblockid('쉼표배열%1의%2번째항목%3')}`].func = (sprite, script) => {
+  var mylist = script.getValue('mylist',script)
+  var num = script.getValue('num',script)
+  Entry.variableContainer.getVariableByName('avo').value_ = mylist.split(',')[num+1]
+}
+
+
+//쉽표배열 항목수
+Entry.block[`func_${getblockid('쉼표배열%1의항목수%2')}`].paramsKeyMap = { mylist : 0};
+Entry.block[`func_${getblockid('쉼표배열%1의항목수%2')}`].func = (sprite, script) => {
+  var mylist = script.getValue('mylist',script)
+  Entry.variableContainer.getVariableByName('avo').value_ = mylist.split(',').length
+}
+
+
 Entry.variableContainer.getVariableByName('avo').value_ = '설치됨'
 alert('몬스터블록이 모두 설치되었습니다!')
