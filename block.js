@@ -62,7 +62,7 @@ Entry.block[`func_${getblockid('콘솔창초기화하기%1')}`].func = (sprite, 
 Entry.block[`func_${getblockid('쉼표배열%1의%2번째항목%3')}`].paramsKeyMap = { mylist : 0, num:1};
 Entry.block[`func_${getblockid('쉼표배열%1의%2번째항목%3')}`].func = (sprite, script) => {
   var mylist = script.getValue('mylist',script)
-  var num = script.getValue('num',script)
+  var num = script.getValue('num',script)*1
   Entry.variableContainer.getVariableByName('avo').value_ = mylist.split(',')[num+1]
 }
 
