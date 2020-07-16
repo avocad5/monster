@@ -5,7 +5,6 @@ function getblockid(name){
         d => d.block.template.replace(/ /gi,'') == name).id
 }
 
-
 //alert 블록
 Entry.block[`func_${getblockid('%1경고하기%2')}`].paramsKeyMap = { content: 0 };
 Entry.block[`func_${getblockid('%1경고하기%2')}`].func = (sprite, script) => {
@@ -57,6 +56,7 @@ Entry.block[`func_${getblockid('콘솔창초기화하기%1')}`].paramsKeyMap = {
 Entry.block[`func_${getblockid('콘솔창초기화하기%1')}`].func = (sprite, script) => {
   console.clear()
 }
+
 
 Entry.variableContainer.getVariableByName('avo').value_ = '설치됨'
 alert('몬스터블록이 모두 설치되었습니다!')
